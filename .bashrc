@@ -29,7 +29,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 #    tmux set-option allow-rename on 1>/dev/null
 
 #}
-
+###funktions###
 ###alias-commands###
 alias v='nvim'
 alias e='exit'
@@ -39,4 +39,5 @@ alias ll='ls -la'
 alias la='ls -lathr'
 alias t='tmux'
 alias update='apt-get update && apt-get upgrade'
-alias dotconf='/usr/bin/git --git-dir=/home/bloosmin/.dotfiles/.git/ --work-tree=/home/bloosmin'
+alias dotgit='/usr/bin/git --git-dir=/home/bloosmin/.dotfiles/.git/ --work-tree=/home/bloosmin'
+alias dotcommit='dotgit commit -m'
