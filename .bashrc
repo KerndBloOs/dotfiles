@@ -29,7 +29,6 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 #    tmux set-option allow-rename on 1>/dev/null
 
 #}
-###funktions###
 ###alias-commands###
 alias v='nvim'
 alias e='exit'
