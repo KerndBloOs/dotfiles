@@ -16,19 +16,6 @@ PS1='\e[0;32m<bloos-bash>[\w]\$\e[m '
 ###path variables###
 export PATH="$PATH:/opt/nvim-linux64/bin"
 ###
-###ssh hostname tmux###
-
-#ssh() {
-
-#    tmux set-option allow-rename off 1>/dev/null
-
-#    tmux rename-window "ssh-$*"
-
-#    command ssh "$@"
-
-#    tmux set-option allow-rename on 1>/dev/null
-
-#}
 ###alias-commands###
 alias v='nvim'
 alias e='exit'
@@ -37,6 +24,5 @@ alias ll='ls --color=auto'
 alias ll='ls -la'
 alias la='ls -lathr'
 alias t='tmux'
-alias update='apt-get update && apt-get upgrade'
-alias dotgit='/usr/bin/git --git-dir=/home/bloosmin/.dotfiles/.git/ --work-tree=/home/bloosmin'
-alias dotcommit='dotgit commit -am'
+#alias dotgit='/usr/bin/git --git-dir=/home/bloosmin/.dotfiles/.git/ --work-tree=/home/bloosmin'
+alias dotgit='/usr/bin/git --git-dir=$HOME/.dotfiles/.git/ --work-tree=$HOME'
