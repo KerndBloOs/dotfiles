@@ -8,9 +8,9 @@ source $HOME/.keychain/$HOSTNAME-sh
 
 ###bash-config###
 PS1='\e[0;32m<bloos-bash>[\w]\$\e[m '
-if command -v tmux &>/dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-	exec tmux
-fi
+#if command -v tmux &>/dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#	exec tmux
+#fi
 ###
 
 ###path variables###
