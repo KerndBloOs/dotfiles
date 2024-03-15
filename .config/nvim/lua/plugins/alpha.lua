@@ -43,7 +43,7 @@ return {
       dashboard.button("b", "   File browser", ":Neotree reveal filesystem left <CR>"),
       dashboard.button("f", "   Find file", ":Telescope find_files <CR>"),
       dashboard.button("g", "󰷾   Find text", ":Telescope live_grep <CR>"),
-      dashboard.button("c", "   Config", ":e $MYVIMRC <CR>"),
+      --dashboard.button("c", "   Config", ":e $MYVIMRC <CR>"),
       dashboard.button("m", "󱌣   Mason", ":Mason<CR>"),
       dashboard.button("l", "󰒲   Lazy", ":Lazy<CR>"),
       dashboard.button("u", "󰂖   Update plugins", "<cmd>lua require('lazy').sync()<CR>"),
