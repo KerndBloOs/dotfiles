@@ -8,14 +8,10 @@ source $HOME/.keychain/$HOSTNAME-sh
 
 ###bash-config###
 PS1='\e[0;32m<bloos-bash>[\w]\$\e[m '
-#if command -v tmux &>/dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-#	exec tmux
-#fi
-###
 
 ###path variables###
 export PATH="$PATH:/opt/nvim-linux64/bin"
-###
+
 ###alias-commands###
 alias v='nvim'
 alias e='exit'
@@ -24,5 +20,5 @@ alias ll='ls --color=auto'
 alias ll='ls -la'
 alias la='ls -lathr'
 alias t='tmux'
-#alias dotgit='/usr/bin/git --git-dir=/home/bloosmin/.dotfiles/.git/ --work-tree=/home/bloosmin'
 alias dotgit='/usr/bin/git --git-dir=$HOME/.dotfiles/.git/ --work-tree=$HOME'
+alias dotcommit='dotgit commit -am'
