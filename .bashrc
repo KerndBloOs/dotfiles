@@ -2,10 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-###keychain configuration
-/usr/bin/keychain --nogui $HOME/.ssh/id_ed2551/id_ghub
-source $HOME/.keychain/$HOSTNAME-sh
-
 ###bash-config###
 PS1='\e[0;32m<bloos-bash>[\w]\$\e[m '
 
