@@ -50,10 +50,6 @@ return {
       dashboard.button("q", "   Quit NVIM", ":qa<CR>"),
 		}
 
-		--local function footer()
-		--return "Mohammed Babiker Babai"
-		--end
-
 		--dashboard.section.footer.val = footer()
 
 		dashboard.opts.opts.noautocmd = true
