@@ -40,7 +40,7 @@ return {
 		dashboard.section.buttons.val = {
       dashboard.button("n", "   New file", ":ene <BAR> startinsert <CR>"),
       dashboard.button("r", "󰄉   Recent files", ":Telescope oldfiles <CR>"),
-      dashboard.button("b", "   File browser", ":Neotree reveal filesystem left <CR>"),
+      dashboard.button("b", "   File browser", ":Neotree reveal filesystem <CR>"),
       dashboard.button("f", "   Find file", ":Telescope find_files <CR>"),
       dashboard.button("g", "󰷾   Find text", ":Telescope live_grep <CR>"),
       --dashboard.button("c", "   Config", ":e $MYVIMRC <CR>"),
@@ -49,8 +49,7 @@ return {
       dashboard.button("u", "󰂖   Update plugins", "<cmd>lua require('lazy').sync()<CR>"),
       dashboard.button("q", "   Quit NVIM", ":qa<CR>"),
 		}
-
-		--dashboard.section.footer.val = footer()
+    --dashboard.section.footer.val = footer()
 
 		dashboard.opts.opts.noautocmd = true
 		alpha.setup(dashboard.opts)
