@@ -21,12 +21,38 @@ return {
 
       local lspconfig = require("lspconfig")
       lspconfig.tsserver.setup({
-        capabilities =capabilities
+        capabilities = capabilities
       })
       lspconfig.lua_ls.setup({
         capabilities = capabilities
       })
-      lspconfig.ansiblels.setup({
+      lspconfig["ansiblels"].setup({
+        filetypes = {
+          "yaml",
+        },
+        settings = {
+          ansible = {
+            ansible = {
+              path = "ansible",
+              useFullyQualifiedCollectionNames = true
+            },
+            ansibleLint = {
+              enabled = true,
+              path = "ansible-lint"
+            },
+            executionEnvironment = {
+              enabled = false
+            },
+            python = {
+              interpreterPath = "python"
+            },
+            completion = {
+              provideRedirectModules = true,
+              provideModuleOptionAliases = true
+            }
+          },
+        },
+        on_attach = on_attach,
         capabilities = capabilities
       })
       lspconfig.tsserver.setup({
