@@ -9,9 +9,13 @@ return {
   opts = {
     filesystem = {
       filtered_items = {
-        hide_dotfiles = false,
-        never_show = { ".git" },
+        --visible = true,
+        show_hidden_count = true,
+        },
       },
     },
-  },
+	config = function()
+		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
+		vim.keymap.set("n", "<leader>nb", ":Neotree buffers reveal float<CR>", {})
+	end
 }

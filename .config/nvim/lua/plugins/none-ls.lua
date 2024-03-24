@@ -18,5 +18,7 @@ return {
           null_ls.builtins.diagnostics.ansiblelint,
         },
 		})
+
+		vim.keymap.set("n", "<leader>fm", vim.lsp.buf.format, {})
 	end,
 }
