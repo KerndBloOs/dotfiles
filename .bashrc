@@ -3,7 +3,7 @@
 # for examples
 
 ###bash-config###
-PS1='\e[0;32m<bash>[\w]\$\e[m '
+PS1='\e[0;32m<bloos-bash>[\w]\$\e[m '
 
 ###path variables###
 export PATH="$PATH:/opt/nvim-linux64/bin"
