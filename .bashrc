@@ -3,7 +3,10 @@
 # for examples
 
 ###bash-config###
-PS1='\e[0;32mbash[\w]>\e[m '
+PS1='\n\e[0;34mbash[\w]>\e[m '
+
+# keybinds
+bind -x '"\C-l":clear'
 
 ###path variables###
 export PATH="$PATH:/opt/nvim-linux64/bin"
