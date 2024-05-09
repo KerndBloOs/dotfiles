@@ -38,17 +38,19 @@ return {
 
 		-- Set menu
 		dashboard.section.buttons.val = {
-      dashboard.button("n", "   New File", "<cmd>ene<CR>"),
+      dashboard.button("n", "   New file", ":ene <BAR> startinsert <CR>"),
       dashboard.button("r", "󰄉   Recent files", ":Telescope oldfiles <CR>"),
-      dashboard.button("e", "   Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
-      dashboard.button("SPC ff", "󰱼   Find File", "<cmd>Telescope find_files<CR>"),
-      dashboard.button("SPC fs", "   Find Word", "<cmd>Telescope live_grep<CR>"),
-      dashboard.button("SPC wr", "󰁯   Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
-      dashboard.button("m", "󱌣   Mason", "<cmd>Mason<CR>"),
-      dashboard.button("l", "󰒲   Lazy", "<cmd>Lazy<CR>"),
+      dashboard.button("b", "   File browser", ":Neotree reveal filesystem <CR>"),
+      --dashboard.button("e", "   File browser", ":E <CR>"),
+
+      dashboard.button("f", "   Find file", ":Telescope find_files <CR>"),
+      dashboard.button("g", "󰷾   Find text", ":Telescope live_grep <CR>"),
+      dashboard.button("c", "   Config", ":Neotree .config/nvim <CR>"),
+      --dashboard.button("c", "   Config", ":e $MYVIMRC <CR>"),
+      dashboard.button("m", "󱌣   Mason", ":Mason<CR>"),
+      dashboard.button("l", "󰒲   Lazy", ":Lazy<CR>"),
       dashboard.button("u", "󰂖   Update plugins", "<cmd>lua require('lazy').sync()<CR>"),
-      --dashboard.button("c", "   Config", "<cmd>NvimTree .config/nvim<CR>"),
-      dashboard.button("q", "   Quit NVIM", "<cmd>qa<CR>"),
+      dashboard.button("q", "   Quit NVIM", ":qa<CR>"),
 		}
     --dashboard.section.footer.val = footer()
 
