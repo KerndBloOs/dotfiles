@@ -10,7 +10,7 @@ return {
     },
   },
   keys = {
-    { "<leader>kw", ':lua require("kiwi").open_wiki_index("notes")<cr>', desc = "Open index of personal wiki" },
+    { "<leader>ki", ':lua require("kiwi").open_wiki_index("notes")<cr>', desc = "Open index of personal wiki" },
   },
   lazy = true,
 }
