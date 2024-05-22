@@ -3,7 +3,7 @@
 # for examples
 
 ###bash-config###
-PS1='\n\e[1;34mbash[\w]>\e[m '
+PS1='\n\e[1;34m[\w]>\e[m '
 
 # keybinds
 bind -x '"\C-l":clear'
