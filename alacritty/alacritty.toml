@@ -1,0 +1,57 @@
+#install themes from  https://github.com/alacritty/alacritty-theme
+
+import = ['C:\Users\bernd\AppData\Roaming\alacritty\themes\tokyo-night.toml']
+
+[shell]
+program = 'C:\Program Files\WSL\wsl.exe'
+args = ["--cd ~"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 10
+padding.y = 20
+dynamic_padding = true
+decorations = "None"
+startup_mode = "Maximized"
+position.x = 250
+position.y = 20
+
+[scrolling]
+#max number of lines in scroll back buffer
+history = 10000
+#scrolling distance multiplier
+multiplier = 3
+
+[font]
+size = 12
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+#style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+#style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+#style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+#style = "Bold_Italic"
+
+[cursor]
+style.shape = "Beam"
+style.blinking = "On"
+
+[mouse]
+hide_when_typing = true
+[[mouse.bindings]]
+action = "PasteSelection"
+mouse = "Right"
+
+[selection]
+save_to_clipboard = true
