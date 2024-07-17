@@ -1,6 +1,8 @@
 #install themes from  https://github.com/alacritty/alacritty-theme
 
-import = ['C:\Users\bernd\AppData\Roaming\alacritty\themes\tokyo-night.toml']
+import = [
+  'C:\Users\<username>\AppData\Roaming\alacritty\themes\tokyo-night.toml',
+]
 
 [shell]
 program = 'C:\Program Files\WSL\wsl.exe'
