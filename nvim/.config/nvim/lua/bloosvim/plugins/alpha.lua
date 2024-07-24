@@ -39,13 +39,12 @@ return {
     -- Set menu
     dashboard.section.buttons.val = {
       dashboard.button("n", "   New File", "<cmd>ene<CR>"),
-      dashboard.button("r", "󰄉   Recent files", ":Telescope oldfiles <CR>"),
-      dashboard.button("e", "   Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
+      dashboard.button("r", "󰄉   Recent", ":Telescope oldfiles <CR>"),
+      dashboard.button("e", "   File explorer", "<cmd>NvimTreeToggle<CR>"),
       dashboard.button("m", "󱌣   Mason", "<cmd>Mason<CR>"),
       dashboard.button("l", "󰒲   Lazy", "<cmd>Lazy<CR>"),
-      dashboard.button("u", "󰂖   Update plugins", "       <cmd>lua require('lazy').sync()<CR>"),
-      --dashboard.button("c", "   Config", "<cmd>NvimTree .config/nvim<CR>"),
-      dashboard.button("q", "   Quit NVIM", "<cmd>qa<CR>"),
+      dashboard.button("u", "󰂖   Update plugins", " <cmd>lua require('lazy').sync()<CR>"),
+      dashboard.button("q", "   Quit Bloosvim", "<cmd>qa<CR>"),
     }
     --dashboard.section.footer.val = footer()
 
