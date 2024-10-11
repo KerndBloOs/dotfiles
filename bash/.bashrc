@@ -4,6 +4,7 @@
 
 ###bash-config###
 PS1='\n\e[1;34m[\w]>\e[m '
+export EDITOR='/opt/nvim-linux64/bin/nvim'
 
 # keybinds
 bind -x '"\C-l":clear'
