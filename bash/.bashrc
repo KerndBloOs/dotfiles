@@ -3,7 +3,8 @@
 # for examples
 
 ###bash-config###
-PS1='\n\e[1;34m[\w]>\e[m '
+#PS1='\n\e[1;34m[\w]>\e[m '
+export PS1="[\w]$ "
 export EDITOR='/opt/nvim-linux64/bin/nvim'
 
 # keybinds
