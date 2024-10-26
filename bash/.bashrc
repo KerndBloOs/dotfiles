@@ -4,7 +4,7 @@
 
 ###bash-config###
 #PS1='\n\e[1;34m[\w]>\e[m '
-export PS1="[\w]$ "
+export PS1="\w\n$ "
 export EDITOR='/opt/nvim-linux64/bin/nvim'
 
 # keybinds
