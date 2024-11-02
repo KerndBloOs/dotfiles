@@ -3,18 +3,17 @@
 # for examples
 
 ###bash-config###
-#PS1='\n\e[1;34m[\w]>\e[m '
-export PS1='\n[\w]❯\e[m '
+export PS1='\w\n\e[m> '
 export EDITOR='/opt/nvim-linux64/bin/nvim'
 
 # keybinds
-bind -x '"\C-l":clear'
 
 ###path variables###
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 ###alias-commands###
 alias t='/usr/bin/tmux attach || /usr/bin/tmux'
+alias c='clear'
 alias v='nvim'
 alias e='exit'
 alias ..="cd .."

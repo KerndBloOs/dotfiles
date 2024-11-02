@@ -5,10 +5,37 @@ return {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
     { "folke/neodev.nvim", opts = {} },
+    { "hrsh7th/nvim-cmp" },
   },
   config = function()
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
+
+    -- Configure ansible-language-server
+    lspconfig.ansiblels.setup({
+      filetypes = { "yaml.ansible" },
+      settings = {
+        ansible = {
+          validation = {
+            lint = {
+              enabled = true,
+              path = "ansible-lint",
+            },
+          },
+        },
+      },
+    })
+
+    -- import nvim-cmp plugin (completions plugin)
+    local cmp = require("cmp")
+
+    -- Add YAML filetype detection for Ansible
+    vim.filetype.add({
+      extension = {
+        yml = "yaml.ansible",
+        yaml = "yaml.ansible",
+      },
+    })
 
     -- import mason_lspconfig plugin
     local mason_lspconfig = require("mason-lspconfig")
