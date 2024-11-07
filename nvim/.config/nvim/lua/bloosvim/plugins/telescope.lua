@@ -45,10 +45,18 @@ return {
 
     -- set keymaps
     local keymap = vim.keymap -- for conciseness
+    keymap.set("n", "<leader>/", function()
+      -- You can pass additional configuration to telescope to change theme, layout, etc.
+      require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
+        winblend = 10,
+        previewer = true,
+      }))
+    end, { desc = "[/] Fuzzily search in current buffer]" })
 
-    keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
-    keymap.set("n", "<leader><leader>", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
+    keymap.set("n", "<leader><leader>", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
+    keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
     keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
     keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
+    keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find existing buffers" })
   end,
 }

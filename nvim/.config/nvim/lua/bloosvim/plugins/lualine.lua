@@ -65,6 +65,11 @@ return {
           { "fileformat" },
           { "filetype" },
         },
+        lualine_a = {
+          {
+            "buffers",
+          },
+        },
       },
     })
   end,
