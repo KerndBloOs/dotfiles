@@ -25,6 +25,6 @@ alias v='nvim'
 alias e='exit'
 alias ..="cd .."
 alias ll='ls --color=auto'
-alias ll='ls -la'
+#alias ll='ls -la'
 alias la='ls -lathr'
 alias t='tmux'
