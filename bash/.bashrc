@@ -2,16 +2,16 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-###bash-config###
-export PS1='[\w]\e[m> '
+### bash-config ###
+export PS1='[\w]\n\e[m❯ '
 export EDITOR='/opt/nvim-linux64/bin/nvim'
 
 # keybinds
 
-###path variables###
+### path variables ###
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
-###alias-commands###
+### alias-commands ###
 alias t='/usr/bin/tmux attach || /usr/bin/tmux'
 alias c='clear'
 alias v='nvim'
