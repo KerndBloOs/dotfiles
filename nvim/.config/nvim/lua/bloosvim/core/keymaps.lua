@@ -9,6 +9,9 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 -- paste without overwriting register
 keymap.set("v", "p", '"_dP')
 
+-- create new file
+keymap.set("n", "<leader>ne", "<cmd>ene<CR>", { desc = "Create new file" }) -- create new file
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
