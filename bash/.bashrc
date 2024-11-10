@@ -15,10 +15,10 @@ set -o vi
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 ### alias-commands ###
-alias wro='curl "https://wttr.in/rosenheim?1&F&q"'
-alias wvro='curl "https://wttr.in/rosenheim?format=1"'
-alias wri='curl "https://wttr.in/riedering?1&F&q"'
-alias wvri='curl "https://wttr.in/riedering?format=1"'
+alias wvro='curl "https://wttr.in/rosenheim?1&F&q"'
+alias wro='curl "https://wttr.in/rosenheim?format=1"'
+alias wvri='curl "https://wttr.in/riedering?1&F&q"'
+alias wri='curl "https://wttr.in/riedering?format=1"'
 alias t='/usr/bin/tmux attach || /usr/bin/tmux'
 alias c='clear'
 alias v='nvim'
