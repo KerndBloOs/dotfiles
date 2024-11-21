@@ -3,7 +3,7 @@
 # for examples
 
 ### bash-config ###
-export PS1='[\w]\n\e[m❯ '
+#export PS1='❯'
 export EDITOR='/opt/nvim-linux64/bin/nvim'
 
 # set vi mode
