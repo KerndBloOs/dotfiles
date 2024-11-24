@@ -5,7 +5,7 @@
 ### bash-config ###
 #export PS1='❯'
 export EDITOR='/opt/nvim-linux64/bin/nvim'
-
+eval "$(starship init bash)"
 # set vi mode
 set -o vi
 
