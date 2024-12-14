@@ -4,8 +4,11 @@
 
 ### bash-config ###
 #export PS1='❯'
-export EDITOR='/opt/nvim-linux64/bin/nvim'
+
+# set up tools
 eval "$(starship init bash)"
+export EDITOR='/opt/nvim-linux64/bin/nvim'
+
 # set vi mode
 set -o vi
 
@@ -24,7 +27,6 @@ alias c='clear'
 alias v='nvim'
 alias e='exit'
 alias ..="cd .."
-#alias ll='ls --color=auto'
 alias ll='ls -la --color=auto'
 alias la='ls -lathr'
 alias t='tmux'

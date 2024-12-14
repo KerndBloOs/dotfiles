@@ -40,7 +40,7 @@ return {
     dashboard.section.buttons.val = {
       dashboard.button("n", "   New File", "<cmd>ene<CR>"),
       dashboard.button("r", "󰄉   Recent", ":Telescope oldfiles <CR>"),
-      dashboard.button("e", "   File explorer", "<CMD>Oil --float<CR>"),
+      dashboard.button("o", "   File explorer", "<CMD>Oil<CR>"),
       dashboard.button("m", "󱌣   Mason", "<cmd>Mason<CR>"),
       dashboard.button("l", "󰒲   Lazy", "<cmd>Lazy<CR>"),
       dashboard.button("u", "󰂖   Update plugins", " <cmd>lua require('lazy').sync()<CR>"),
