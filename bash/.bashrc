@@ -5,6 +5,10 @@
 ### bash-config ###
 #export PS1='❯'
 
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 # set up tools
 eval "$(starship init bash)"
 export EDITOR='/opt/nvim-linux64/bin/nvim'
