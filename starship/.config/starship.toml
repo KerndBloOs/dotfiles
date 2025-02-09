@@ -11,13 +11,12 @@
 add_newline = false
 
 [character]
-#success_symbol = "[](white)"
-#error_symbol = "[](red)"
-vimcmd_symbol = "[](green)"
+success_symbol = "[](white)"
+error_symbol = "[](red)"
 
 [directory]
 style = "blue bold"
-home_symbol = "@home"
+home_symbol = "~/"
 
 [package]
 disabled = true
