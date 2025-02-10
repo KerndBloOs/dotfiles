@@ -16,7 +16,7 @@ error_symbol = "[](red)"
 
 [directory]
 style = "blue bold"
-home_symbol = "~/"
+home_symbol = "~"
 
 [package]
 disabled = true
